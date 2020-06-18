@@ -9,15 +9,18 @@ html(lang="en")
     link(rel="stylesheet" href="css/style.min.css")
 
   body
+    include ../modules/sprite
+    include ../modules/header
     main
-      include ../modules/header
       .home-page__hover(style="background-image: url(img/home-hover.jpg)")
       .wrap
-        h1.home-page__hover-title Study online with ESSEC Augmented Digital Campus
+        h1.home-page__hover-title Видео конференции 
         a.home-page__hover-btn(href="programmes-page.html") Explore our online courses now
       .wrap
         section.home-page__advantage.advantage
           //- include ../modules/advantage
+    include ../modules/callback
+    include ../modules/thanks
 
     script(src="lib/jquery3.4.1.js")
     script(src="lib/glide/glide.min.js")

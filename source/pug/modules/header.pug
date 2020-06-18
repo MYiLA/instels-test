@@ -1,0 +1,27 @@
+header.header
+  a.header__logo(href="#")
+    img(src="./img/logo.png", alt="логотип")
+  button.header__burger-btn(type="button" aria-label="открыть или закрыть меню")
+  .header__menu.menu
+    nav.menu__nav.nav
+      ul.nav__list
+        li.nav__item
+          a.nav__link Главная
+        li.nav__item
+          a.nav__link Проекты
+        li.nav__item
+          a.nav__link Услуги
+        li.nav__item
+          a.nav__link О компании
+        li.nav__item
+          a.nav__link Готовые решения
+        li.nav__item
+          a.nav__link Контакты
+
+    a.menu__mail(href="mailto:info@sld-store.ru") #[svg(width="24" height="24") #[use(xlink:href="#icon-mail")]] info@sld-store.ru
+    .menu__tel.tel
+      svg(width="24" height="24")
+        use(xlink:href="#icon-tel")
+      .tel__wrap
+        button.tel__callback-btn(type="button") Обратный звонок
+        a.tel__link(href="tel:88126156279") 8 812 615-62-79

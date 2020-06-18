@@ -1,0 +1,13 @@
+.callback.active
+  button.callback__btn-close(type="button" aria-label="закрыть окно")
+  h2.callback__title Готовы обсудить проект?
+  p.callback__desc Заполните форму ниже и мы свяжемся с вами.
+    .form__input-wrap
+      label.form__label(for="name") Имя*
+      input.form__input(type="text" id="name" name="name" autocomplete="off")
+    .form__input-wrap
+      label.form__label(for="tel") Телефон*
+      input.form__input(type="tel" id="tel" name="telephone" autocomplete="off")
+  p.form__personal-data Я согласен с условиями обработки 
+    a.form__personal-link(href="#") персональных данных
+  button.form__submit(type="submit") Отправить
